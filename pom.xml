@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.thirupathy.learn</groupId>
+    <artifactId>PrintNumbers</artifactId>
+    <version>2.0.0</version>
+
+    <!--<repositories>-->
+    <!--<repository>-->
+    <!--<id>sid-snapshot</id>-->
+    <!--<snapshots>-->
+    <!--<enabled>true</enabled>-->
+    <!--</snapshots>-->
+    <!--<url>http://localhost:8082/repository/sid-snapshot/</url>-->
+    <!--</repository>-->
+    <!--</repositories>-->
+
+    <profiles>
+        <profile>
+            <id>standard-repo</id>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>sid-snapshot</id>
+                    <url>http://localhost:8082/repository/sid-snapshot/</url>
+                </snapshotRepository>
+                <repository>
+                    <id>sid-release</id>
+                    <url>http://localhost:8082/repository/sid-release/</url>
+                </repository>
+            </distributionManagement>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+</project>
