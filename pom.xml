@@ -4,7 +4,7 @@
 
     <groupId>com.thirupathy.learn</groupId>
     <artifactId>PrintNumbers</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>4.0.1-SNAPSHOT</version>
 
     <properties>
         <project.scm.id>github</project.scm.id>
